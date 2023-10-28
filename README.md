@@ -1,14 +1,14 @@
 ### Các tài liệu liên quan
-Tài liệu thực thi đề tài: https://drive.google.com/drive/folders/1NZHdj6Z8kHSEQIxuaA3VItKTSQUetCSS?usp=sharing
-Soucrce code đề tài: https://github.com/asoanconfee/PTUD_DO_AN_QUAN_LY_BAN_HANG
-File ppt thuyết trình: https://www.canva.com/design/DAFyXuzaCRk/vU9YoJIMIRdL664V_4IBmw/edit?utm_content=DAFyXuzaCRk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+- Tài liệu thực thi đề tài: https://drive.google.com/drive/folders/1NZHdj6Z8kHSEQIxuaA3VItKTSQUetCSS?usp=sharing
+- Soucrce code đề tài: https://github.com/asoanconfee/PTUD_DO_AN_QUAN_LY_BAN_HANG
+- File ppt thuyết trình: https://www.canva.com/design/DAFyXuzaCRk/vU9YoJIMIRdL664V_4IBmw/edit?     utm_content=DAFyXuzaCRk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ### Run src
-Download src qua link github ở trên
-Và download file dữ liệu SQL và chạy trên SQL sever
-Sử dụng công cụ NetBeans
+- Download src qua link github ở trên
+- Và download file dữ liệu SQL và chạy trên SQL sever
+- Sử dụng công cụ NetBeans
     Import project
-Sử dụng Eclipse IDE
+- Sử dụng Eclipse IDE
     Tạo Workspace trước sau đó import project
 
 ### Thư viện sửa dụng
