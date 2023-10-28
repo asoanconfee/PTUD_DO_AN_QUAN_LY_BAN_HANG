@@ -51,16 +51,41 @@ Application.setSelectedMenu(0, 0);
 ``` java
 menu.addMenuEvent(new MenuEvent() {
     @Override
-    public void menuSelected(int index, int subIndex, MenuAction action) {
-        if (index == 1) {
-            if (subIndex == 1) {
-                Application.showForm(new FormInbox());
-            } else if (subIndex == 2) {
-                Application.showForm(new FormRead());
+    private void initMenuEvent() {
+        menu.addMenuEvent((int index, int subIndex, MenuAction action) -> {
+            if (index == 0) {
+                Application.showForm(new FormTrangChu());
+            } else if (index == 1) {
+                if (subIndex == 1) {
+                    Application.showForm(new FormHoaDon());
+                } else {
+                    action.cancel();
+                }
+            } else if (index == 2) {
+                Application.showForm(new FormSanPham());
+            } else if (index == 3) {
+                Application.showForm(new FormKhachHang());
+            } else if (index == 4) {
+                Application.showForm(new FormNhaCungCap());
+            } else if (index == 5) {
+                Application.showForm(new FormNhanVien());
+            } else if (index == 6) {
+                if (subIndex == 1) {
+                    Application.showForm(new FormThongKe());
+                } else if (subIndex == 2) {
+                    //Application.showForm(new FormThongKeSanPhamBanChay());
+                } else {
+                    action.cancel();
+                }
+            } else if (index == 7) {
+                Application.showForm(new FormTaiKhoan());
+            } else if (index ==8) {
+                Application.showForm(new FormTroGiup());
+            } else if (index == 9) {
+                Application.logout();
+            } else {
+                action.cancel();
             }
-        } else {
-            action.cancel();
-        }
-    }
-});
+        });
+}
 ```
