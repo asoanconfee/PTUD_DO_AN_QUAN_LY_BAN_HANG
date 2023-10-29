@@ -117,13 +117,13 @@ public class FormSanPham extends javax.swing.JPanel {
 
         jDateChooser1.setDateFormatString("dd/MM/yy");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Đen", "Trắng", "Xám", "Kem", "Đỏ", "Xanh lá", "Xanh dương", "Hồng", "Khác" }));
+        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "M001", "M002", "M003", "M004", "M005", "M006", "M007", "Khác" }));
 
         jLabel4.setText("Tên sản phẩm");
 
         jLabel16.setText("Xuất xứ");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Việt Nam", "Thái Lan", "Lào", "Mỹ", "Hàn Quốc", "Nhật Bản", "Trung Quốc " }));
+        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "MI-VN", "MI-TL", "MI-CN", "MI-FR", "MI-SING", "MI-KO", "MI-NO" }));
 
         jLabel7.setText("Giá nhập");
 
@@ -149,7 +149,7 @@ public class FormSanPham extends javax.swing.JPanel {
 
         jLabel10.setText("Kích cỡ");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "BodyCom", "A - line", "Trench - coat", "Khác" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "STY-001", "STY-002", "STY-003", "STY-004", "STY-005", "STY-006", "STY-007" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
@@ -158,7 +158,7 @@ public class FormSanPham extends javax.swing.JPanel {
 
         jLabel11.setText("Màu sắc");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Vải cotton", "Vải len", "Nỉ da cá", "Khác" }));
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CL-001", "CL-002", "CL-003", "CL-004", "CL-005", "CL-006", "CL-007", "Khác" }));
         jComboBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox2ActionPerformed(evt);
@@ -242,10 +242,10 @@ public class FormSanPham extends javax.swing.JPanel {
                             .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField5)))
                 .addGap(67, 67, 67)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -390,9 +390,9 @@ public class FormSanPham extends javax.swing.JPanel {
                     .addComponent(jButton8))
                 .addGap(18, 18, 18)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 235, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Thông tin chi tiết", jPanel2);
