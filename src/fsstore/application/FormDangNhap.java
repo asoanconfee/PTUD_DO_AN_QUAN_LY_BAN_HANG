@@ -52,6 +52,8 @@ public class FormDangNhap extends javax.swing.JPanel {
         txtPass = new javax.swing.JPasswordField();
         cmdExit = new javax.swing.JButton();
 
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         cmdLogin.setText("Đăng nhập");
         cmdLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +62,6 @@ public class FormDangNhap extends javax.swing.JPanel {
         });
 
         lbTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lbTitle.setIcon(new javax.swing.ImageIcon("D:\\SalesProgram\\src\\fsstore\\icon\\png\\logomain.png")); // NOI18N
         lbTitle.setText("Đăng nhập");
 
         lbUser.setText("Tên người dùng");
@@ -119,31 +120,16 @@ public class FormDangNhap extends javax.swing.JPanel {
                 .addGap(79, 79, 79))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(204, 204, 204)
-                .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(319, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(106, Short.MAX_VALUE))
-        );
+        add(login, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 71, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void cmdLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLoginActionPerformed
-        Application.login();
-    }//GEN-LAST:event_cmdLoginActionPerformed
 
     private void cmdExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdExitActionPerformed
         System.exit(0);
     }//GEN-LAST:event_cmdExitActionPerformed
+
+    private void cmdLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLoginActionPerformed
+        Application.login();
+    }//GEN-LAST:event_cmdLoginActionPerformed
 
     private class LoginFormLayout implements LayoutManager {
 
