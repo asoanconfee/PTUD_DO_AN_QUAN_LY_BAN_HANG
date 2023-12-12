@@ -3,16 +3,12 @@ package gui;
 import entity.KhachHang;
 import java.awt.Color;
 import java.util.ArrayList;
-
 import javax.swing.BorderFactory;
 import javax.swing.ButtonGroup;
 import javax.swing.JOptionPane;
 import javax.swing.border.Border;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
-
-
-
 import dao.KhachHangDAO;
 
 public class QuanLyKhachHang extends javax.swing.JPanel {
