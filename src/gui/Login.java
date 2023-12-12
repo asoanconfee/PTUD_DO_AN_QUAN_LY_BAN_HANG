@@ -7,10 +7,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
-
 import ConnectDB.KetNoiSQL;
 import dao.NhanVienDAO;
 import entity.NhanVien;
@@ -33,7 +31,6 @@ public class Login extends javax.swing.JFrame{
         lbl_showicon.setVisible(false);
         lbl_hiddenicon.setVisible(true);
     }
-
 
     private void initComponents() {
 
